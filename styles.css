@@ -120,7 +120,7 @@ a {
     background-image:
         linear-gradient(rgba(7, 22, 23, 0.50),
             rgba(7, 22, 23, 0.99)),
-        url("assets/images/Background.jpg");
+        url("./assets/images/Background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
