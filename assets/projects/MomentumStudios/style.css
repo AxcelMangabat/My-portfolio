@@ -1,0 +1,164 @@
+:root {
+  --green: #303a2b;
+  --cream: #fbfaf6;
+  --lime: #b7ca5d;
+  --muted: #c1c4a5;
+  --text: #20251d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 6vw;
+  background: var(--green);
+  color: white;
+}
+
+.logo,
+.back-link {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  font-weight: bold;
+  letter-spacing: 0.14em;
+  font-size: 0.85rem;
+}
+
+.back-link {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+main {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.intro {
+  max-width: 760px;
+  padding: 100px 0 70px;
+}
+
+.eyebrow {
+  color: #718238;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 16px 0;
+  font-size: clamp(2.5rem, 7vw, 6rem);
+  line-height: 0.98;
+}
+
+h2 {
+  margin-bottom: 32px;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+}
+
+.description {
+  max-width: 570px;
+  color: #62675c;
+  font-size: 1.1rem;
+}
+
+.preview {
+  overflow: hidden;
+  border-radius: 8px;
+  background: #e7e6dc;
+}
+
+.preview img,
+.device-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  padding: 70px 0;
+  border-bottom: 1px solid #d7d8ce;
+}
+
+.details p:last-child {
+  margin-top: 8px;
+  color: #62675c;
+}
+
+.responsive-previews {
+  padding: 80px 0;
+}
+
+.device-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr;
+  gap: 32px;
+  align-items: start;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  padding-top: 12px;
+  color: #62675c;
+  font-size: 0.9rem;
+}
+
+footer {
+  padding: 28px 6vw;
+  background: var(--green);
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 700px) {
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .intro {
+    padding: 64px 0 48px;
+  }
+
+  .details,
+  .device-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .details {
+    gap: 18px;
+    padding: 48px 0;
+  }
+
+  .responsive-previews {
+    padding: 52px 0;
+  }
+}

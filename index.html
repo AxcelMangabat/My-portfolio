@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Axcel — a curated practice in editorial design, brand identity and art direction.">
+    <meta name="theme-color" content="#071617">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <header id="navbarHeader" class="navbarHeader">
+        <div class="navbarContent">
+            <div class="owner">
+                <a href="#introduction" class="Axcel">Axcel.</a>
+            </div>
+            <div class="navbarLinksWrap">
+                <nav class="navbarLinks">
+                    <a href="#introInfo" class="about">About</a>
+                    <a href="#works" class="work">Work</a>
+                    <a href="#services" class="services">Services</a>
+                    <a href="#contact" class="contact">Contact</a>
+                </nav>
+            </div>
+            <button type="button" id="menuToggle" class="menuToggle" aria-label="Open menu"
+                aria-expanded="false" aria-controls="mobileMenu">
+                <span class="bars" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                </span>
+            </button>
+        </div>
+    </header>
+
+   
+    <div class="menuScrim" id="menuScrim" aria-hidden="true"></div>
+    <aside class="mobileMenu" id="mobileMenu" aria-hidden="true" aria-label="Mobile navigation">
+        <nav class="menuNav">
+            <a href="#introInfo" class="menuLink"><span class="menuIdx">01</span><span class="menuTxt">About</span></a>
+            <a href="#works" class="menuLink"><span class="menuIdx">02</span><span class="menuTxt">Work</span></a>
+            <a href="#services" class="menuLink"><span class="menuIdx">03</span><span class="menuTxt">Services</span></a>
+            <a href="#contact" class="menuLink"><span class="menuIdx">04</span><span class="menuTxt">Contact</span></a>
+        </nav>
+        <div class="menuFoot">
+            <a class="menuMail" href="mailto:axcelmangabat@gmail.com?subject=Portfolio%20Inquiry">
+                axcelmangabat@gmail.com
+            </a>
+            <div class="menuSocial">
+                <a href="https://github.com/AxcelMangabat" target="_blank" rel="noopener noreferrer"
+                    aria-label="Visit my GitHub profile"><i class="fa-brands fa-github"></i></a>
+                <span class="menuCopy">© 2026 Axcel portfolio</span>
+            </div>
+        </div>
+    </aside>
+
+    <main>
+        <section id="introduction">
+            <div class="introContent fadein">
+                <h1 id="introTitle">Designing with <span id="intention">intention</span>.</h1>
+                <p id="introDesc">A curated practice in editorial design, brand identity, and art direction — where
+                    every detail earns
+                    its place.</p>
+                <a href="#works" id="explore">Explore Work <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                        stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down preview-icon">
+                        <path d="M12 5v14" />
+                        <path d="m19 12-7 7-7-7" />
+                    </svg></a>
+            </div>
+        </section>
+        <section id="introInfo">
+            <div class="introInfoContent">
+                <div class="rightContent" id="rightContent">
+                    <h2>About <span>me</span>.</h2>
+                    <p>my profile</p>
+                </div>
+                <div class="leftContent" id="leftContent">
+                    <p>I'm a web development student who enjoys combining design and technology to create websites that
+                        are clean, functional, and easy to use.<br><br>
+
+                        I work with HTML, CSS, JavaScript, and Elementor, and I'm always looking to improve my skills
+                        by building projects and exploring new ideas.<br><br>
+
+                        I'm particularly interested in responsive web design and creating interfaces that balance
+                        visual appeal with usability.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="works">
+            <div class="worksContent">
+                <div class="workTitle">
+                    <h2>Selected<br><em>Works</em>.</h2>
+                </div>
+                <div class="workProjects">
+                    <div class="imagecontainer">
+                        <div class="workimg">
+                            <div class="logoContainer">
+                                <img class="Logo" src="/assets/images/Logo.png" alt="Momentum Studios logo"
+                                    onerror="this.style.display='none'"><button type="button" class="view"
+                                    data-url="/assets/projects/MomentumStudios/index.html"><span
+                                        id="viewText">View&nbsp;Project</span> <svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-square-arrow-out-up-right preview-icon">
+                                        <path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6" />
+                                        <path d="m21 3-9 9" />
+                                        <path d="M15 3h6v6" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="workdesc">
+                        <p class="smallhead">Web Design <span class="line"></span> <span class="year">2026</span></p>
+                        <h3>Momentum / Studios</h3>
+                        <p>A self-initiated Elementor landing-page project created to practice responsive web design,
+                            visual hierarchy, and conversion-focused layouts. The page was designed for desktop,
+                            tablet, and mobile breakpoints. It is currently an unpublished concept.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section id="services">
+            <div class="servicesContent">
+                <div class="serviceTitle">
+                    <h2>Services.</h2>
+                    <p>My Expertise</p>
+                </div>
+                <div class="serviceBox">
+                    <div class="serviceCards card1">
+
+                        <h3>Responsive website development</h3>
+                        <p>Building responsive websites that adapt smoothly across desktop, tablet, and mobile devices.
+                        </p>
+
+                    </div>
+                    <div class="serviceCards card2">
+
+                        <h3>Landing page development</h3>
+                        <p>Creating clean and focused landing pages designed to present information clearly and
+                            effectively.</p>
+
+                    </div>
+                    <div class="serviceCards card3">
+
+                        <h3>UI implementation</h3>
+                        <p>Turning website designs and concepts into functional interfaces using HTML, CSS, and
+                            JavaScript.</p>
+
+                    </div>
+                    <div class="serviceCards card4">
+
+                        <h3>WordPress & Elementor Development</h3>
+                        <p>Building and customizing WordPress websites using Elementor with a focus on clean layouts
+                            and user-friendly design.</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="contactContent">
+                <div class="contactUpper">
+                    <h2 class="contactTitle">Let's make<br><i>something.</i></h2>
+                    <p class="contactDesc">Whether you're beginning a new brand or refining an existing one, I'm
+                        always open<br>to
+                        conversations about design, collaboration, and the spaces in between.</p>
+                    <button class="contactBtn"
+                        data-url="mailto:axcelmangabat@gmail.com?subject=Portfolio%20Inquiry&body=Hello%2C%20I%20would%20like%20to%20discuss%20a%20project."
+                        aria-label="Send me an email"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail preview-icon">
+                            <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                            <rect x="2" y="4" width="20" height="16" rx="2" />
+                        </svg>Hello@AxcelWEB.com</button>
+                </div>
+                <div class="contactLower">
+                    <div class="text">
+                        <p class="contactLinks">Available for select projects <span class="conl"></span> 2026</p>
+                    </div>
+                    <div class="contactIcons">
+                        <a class="github" href="https://github.com/AxcelMangabat" target="_blank"
+                            rel="noopener noreferrer" aria-label="Visit my GitHub profile"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="mailto:axcelmangabat@gmail.com?subject=Portfolio%20Inquiry&body=Hello%2C%20I%20would%20like%20to%20discuss%20a%20project."
+                            aria-label="Send me an email" class="email"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-mail preview-icon">
+                                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                                <rect x="2" y="4" width="20" height="16" rx="2" />
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footerContent">
+            <p>© 2025 Axcel portfolio</p>
+            <p>crafted with intention</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
