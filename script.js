@@ -201,7 +201,7 @@
             if (url.indexOf('mailto:') === 0) {
                 window.location.href = url;
             } else {
-                window.open(url, '_self', 'noopener');
+                window.open(url, '_blank', 'noopener');
             }
         });
     });
