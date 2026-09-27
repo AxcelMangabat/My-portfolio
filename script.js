@@ -221,3 +221,123 @@
 
     onScroll();
 })();
+
+const tabLines = document.querySelectorAll(".tab-line");
+
+tabLines.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    tabLines.forEach((otherTab) => {
+      otherTab.classList.remove("active");
+      otherTab.setAttribute("aria-selected", "false");
+    });
+
+    tab.classList.add("active");
+    tab.setAttribute("aria-selected", "true");
+  });
+});
+
+const tab1 = document.querySelector(".tab1");
+const tab2 = document.querySelector(".tab2");
+const tab3 = document.querySelector(".tab3");
+const titleChange = document.querySelector(".titleChange");
+const titleItalic = document.querySelector(".titleItalic");
+
+const TitleNames = {
+    Projects: ["Selected", "Works."],
+    Certificates: ["Certificates", "& Awards."],
+    Tools: ["Tools", "& Skills."]
+};
+
+let Navigator = 1;
+
+if (Navigator === 1){
+        tab1.classList.add("tabstyle");
+        document.querySelector(".tabtext1").classList.add("tabstyle");
+        document.querySelector(".fa-diagram-project").classList.add("tabstyle");
+
+        tab2.classList.remove("tabstyle");
+        document.querySelector(".tabtext2").classList.remove("tabstyle");
+        document.querySelector(".fa-certificate").classList.remove("tabstyle");
+
+        tab3.classList.remove("tabstyle");
+        document.querySelector(".tabtext3").classList.remove("tabstyle");
+        document.querySelector(".fa-buffer").classList.remove("tabstyle");
+    }
+
+
+tab1.onclick= () => {
+    Navigator = 1;
+    if (Navigator === 1){
+        tab1.classList.add("tabstyle");
+        document.querySelector(".tabtext1").classList.add("tabstyle");
+        document.querySelector(".fa-diagram-project").classList.add("tabstyle");
+        titleChange.textContent = TitleNames.Projects[0];
+        titleItalic.textContent = TitleNames.Projects[1];
+        document.querySelector(".workTitle").classList.add("worktitlestyle1");
+        document.querySelector(".workProjects").classList.remove("nextContent");
+        
+        
+
+        tab2.classList.remove("tabstyle");
+        document.querySelector(".tabtext2").classList.remove("tabstyle");
+        document.querySelector(".fa-certificate").classList.remove("tabstyle");
+        document.querySelector(".workTitle").classList.remove("worktitlestyle2");
+
+        tab3.classList.remove("tabstyle");
+        document.querySelector(".tabtext3").classList.remove("tabstyle");
+        document.querySelector(".fa-buffer").classList.remove("tabstyle");
+        document.querySelector(".workTitle").classList.remove("worktitlestyle3");
+    }
+    
+}
+tab2.onclick = () => {
+    Navigator = 2;
+    if (Navigator === 2){
+        tab2.classList.add("tabstyle");
+        document.querySelector(".tabtext2").classList.add("tabstyle");
+        document.querySelector(".fa-certificate").classList.add("tabstyle");
+        titleChange.textContent = TitleNames.Certificates[0];
+        titleItalic.textContent = TitleNames.Certificates[1];
+        document.querySelector(".workTitle").classList.add("worktitlestyle2");
+        document.querySelector(".workProjects").classList.add("nextContent");
+       
+        
+        tab1.classList.remove("tabstyle");
+        document.querySelector(".tabtext1").classList.remove("tabstyle");
+        document.querySelector(".fa-diagram-project").classList.remove("tabstyle");
+        document.querySelector(".workTitle").classList.remove("worktitlestyle1");
+
+        tab3.classList.remove("tabstyle");
+        document.querySelector(".tabtext3").classList.remove("tabstyle");
+        document.querySelector(".fa-buffer").classList.remove("tabstyle");
+        document.querySelector(".workTitle").classList.remove("worktitlestyle3");
+
+        
+    }
+    
+}
+
+tab3.onclick = () => {
+    Navigator = 3;
+    if (Navigator === 3){
+        tab3.classList.add("tabstyle");
+        document.querySelector(".tabtext3").classList.add("tabstyle");
+        document.querySelector(".fa-buffer").classList.add("tabstyle");
+        titleChange.textContent = TitleNames.Tools[0];
+        titleItalic.textContent = TitleNames.Tools[1];
+        document.querySelector(".workTitle").classList.add("worktitlestyle3");
+        
+        tab1.classList.remove("tabstyle");
+        document.querySelector(".tabtext1").classList.remove("tabstyle");
+        document.querySelector(".fa-diagram-project").classList.remove("tabstyle");
+        document.querySelector(".workTitle").classList.remove("worktitlestyle1");
+        
+
+        tab2.classList.remove("tabstyle");
+        document.querySelector(".tabtext2").classList.remove("tabstyle");
+        document.querySelector(".fa-certificate").classList.remove("tabstyle");
+        document.querySelector(".workTitle").classList.remove("worktitlestyle2");
+        
+    }
+    
+}

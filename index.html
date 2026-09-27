@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="Axcel — a curated practice in editorial design, brand identity and art direction.">
+    <meta name="description"
+        content="Axcel — a curated practice in editorial design, brand identity and art direction.">
     <meta name="theme-color" content="#071617">
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="styles.css">
@@ -26,8 +27,8 @@
                     <a href="#contact" class="contact">Contact</a>
                 </nav>
             </div>
-            <button type="button" id="menuToggle" class="menuToggle" aria-label="Open menu"
-                aria-expanded="false" aria-controls="mobileMenu">
+            <button type="button" id="menuToggle" class="menuToggle" aria-label="Open menu" aria-expanded="false"
+                aria-controls="mobileMenu">
                 <span class="bars" aria-hidden="true">
                     <span></span>
                     <span></span>
@@ -36,13 +37,14 @@
         </div>
     </header>
 
-   
+
     <div class="menuScrim" id="menuScrim" aria-hidden="true"></div>
     <aside class="mobileMenu" id="mobileMenu" aria-hidden="true" aria-label="Mobile navigation">
         <nav class="menuNav">
             <a href="#introInfo" class="menuLink"><span class="menuIdx">01</span><span class="menuTxt">About</span></a>
             <a href="#works" class="menuLink"><span class="menuIdx">02</span><span class="menuTxt">Work</span></a>
-            <a href="#services" class="menuLink"><span class="menuIdx">03</span><span class="menuTxt">Services</span></a>
+            <a href="#services" class="menuLink"><span class="menuIdx">03</span><span
+                    class="menuTxt">Services</span></a>
             <a href="#contact" class="menuLink"><span class="menuIdx">04</span><span class="menuTxt">Contact</span></a>
         </nav>
         <div class="menuFoot">
@@ -94,8 +96,18 @@
         <section id="works">
             <div class="worksContent">
                 <div class="workTitle">
-                    <h2>Selected<br><em>Works</em>.</h2>
+                    <h2 class="workLabel titleChange">Selected</h2>
+                    <h2 class="workLabel"><em class="titleItalic">Works.</em></h2>
                 </div>
+                <div class="tabs">
+                    <button class="tablines tab1"><i class="fa-solid fa-diagram-project"></i> <span
+                            class="tablineText tabtext1">Projects</span></button>
+                    <button class="tablines tab2"><i class="fa-solid fa-certificate"></i> <span
+                            class="tablineText tabtext2">Certificates</span></button>
+                    <button class="tablines tab3"><i class="fa-brands fa-buffer"></i> <span
+                            class="tablineText tabtext3">Tools & Skils</span></button>
+                </div>
+
                 <div class="workProjects">
                     <div class="imagecontainer">
                         <div class="workimg">
@@ -103,10 +115,9 @@
                                 <img class="Logo" src="assets/images/Logo.png" alt="Momentum Studios logo"
                                     onerror="this.style.display='none'"><button type="button" class="view"
                                     target="_self" data-url="assets/projects/MomentumStudios/index.html"><span
-                                        id="viewText">View&nbsp;Project</span> <svg
-                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
-                                        stroke-linecap="round" stroke-linejoin="round"
+                                        id="viewText">View&nbsp;Project</span> <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
                                         class="lucide lucide-square-arrow-out-up-right preview-icon">
                                         <path d="M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6" />
                                         <path d="m21 3-9 9" />
@@ -118,7 +129,7 @@
                     <div class="workdesc">
                         <p class="smallhead">Web Design <span class="line"></span> <span class="year">2026</span></p>
                         <h3>Momentum / Studios</h3>
-                        <p>A self-initiated Elementor landing-page project created to practice responsive web design,
+                        <p>A self-initiated Elementor landing-page project created for responsive web design,
                             visual hierarchy, and conversion-focused layouts. The page was designed for desktop,
                             tablet, and mobile breakpoints. It is currently an unpublished concept.</p>
                     </div>
