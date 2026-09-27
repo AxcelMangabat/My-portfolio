@@ -1888,6 +1888,9 @@ body.menu-open .menuFoot {
         min-height: 100svh;
         background-attachment: scroll;
     }
+    .tabs{
+        margin-top: 1rem;
+    }
 
     .introContent {
         height: auto;
