@@ -275,6 +275,8 @@ tab1.onclick= () => {
         titleItalic.textContent = TitleNames.Projects[1];
         document.querySelector(".workTitle").classList.add("worktitlestyle1");
         document.querySelector(".workProjects").classList.remove("nextContent");
+        document.querySelector(".workCertificates").classList.remove("nextContent");
+        document.querySelector(".skills-grid").classList.remove("nextContent");
         
         
 
@@ -300,6 +302,8 @@ tab2.onclick = () => {
         titleItalic.textContent = TitleNames.Certificates[1];
         document.querySelector(".workTitle").classList.add("worktitlestyle2");
         document.querySelector(".workProjects").classList.add("nextContent");
+        document.querySelector(".workCertificates").classList.add("nextContent");
+        document.querySelector(".skills-grid").classList.remove("nextContent");
        
         
         tab1.classList.remove("tabstyle");
@@ -326,6 +330,9 @@ tab3.onclick = () => {
         titleChange.textContent = TitleNames.Tools[0];
         titleItalic.textContent = TitleNames.Tools[1];
         document.querySelector(".workTitle").classList.add("worktitlestyle3");
+        document.querySelector(".workProjects").classList.add("nextContent");
+        document.querySelector(".workCertificates").classList.remove("nextContent");
+        document.querySelector(".skills-grid").classList.add("nextContent");
         
         tab1.classList.remove("tabstyle");
         document.querySelector(".tabtext1").classList.remove("tabstyle");
