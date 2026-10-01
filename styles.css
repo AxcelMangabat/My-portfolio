@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Serif+Display:ital@0;1&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Serif+Display:ital@0;1&display=swap');
 
 * {
     margin: 0;
@@ -14,7 +13,6 @@
 p {
     font-family: 'Instrument Sans', sans-serif;
     font-stretch: 100%;
-    font-display: swap;
 }
 
 body {
@@ -217,7 +215,6 @@ a {
     font-weight: 400;
     color: #faf4d3b3;
     line-height: 1.5;
-    ;
     width: 512px;
     height: 65px;
     margin-bottom: 40px;
@@ -229,7 +226,6 @@ a {
     font-weight: 400;
     text-transform: uppercase;
     font-stretch: 100%;
-    font-display: swap;
     letter-spacing: 4px;
     color: #979887;
     transition: 0.3s ease;
@@ -245,14 +241,12 @@ a {
 }
 
 #explore svg {
-    size: 16px;
     color: #979887;
     transition: 0.3s ease;
 }
 
 #explore:hover svg {
     transform: translateX(0.2rem);
-    size: 16px;
     color: #FAF4D3;
     transition: 0.3s ease;
 }
@@ -933,7 +927,6 @@ a {
     align-items: flex-start;
     width: 1280px;
     height: 1003px;
-    ;
     margin: 0px 76px;
     padding: 176px 48px;
 }
@@ -2127,6 +2120,18 @@ body.menu-open .menuFoot {
         font-size: clamp(11px, 1vw, 14px);
         letter-spacing: clamp(2px, .22vw, 4px);
     }
+    .profilePic {
+        width: clamp(18rem, 34vw, 30rem);
+        height: auto;
+        margin: 2rem auto clamp(1.5rem, 3vw, 2.5rem);
+    }
+
+    .introPic {
+        width: clamp(9rem, 15vw, 12rem);
+        height: auto;
+        margin-left: clamp(45rem, 32vw, 36rem);
+        margin-top: clamp(7rem, 10vw, 10rem);
+    }
 
 
     #introInfo,
@@ -2818,3 +2823,240 @@ body.menu-open .menuFoot {
         white-space: normal;
     }
 }
+
+.profilePic,
+.introPic {
+    max-width: 100%;
+    aspect-ratio: 1;
+}
+
+@media (max-width: 1100px) {
+    .profilePic {
+        width: clamp(18rem, 34vw, 30rem);
+        height: auto;
+        margin: 2rem auto clamp(1.5rem, 3vw, 2.5rem);
+    }
+
+    .introPic {
+        width: clamp(9rem, 15vw, 12rem);
+        height: auto;
+        margin-left: clamp(18rem, 32vw, 36rem);
+        margin-top: clamp(7rem, 10vw, 10rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .profilePic {
+        width: min(20rem, 60vw);
+        height: auto;
+        margin: 0 auto clamp(2rem, 6vw, 3rem);
+    }
+
+    .introPic {
+        width: clamp(7rem, 27vw, 10rem);
+        height: auto;
+        top: clamp(5rem, 14vh, 8rem);
+        right: clamp(1rem, 6vw, 2.5rem);
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .profilePic {
+        width: min(17rem, 56vw);
+        margin-bottom: 2rem;
+    }
+
+    .introPic {
+        width: clamp(6.5rem, 25vw, 8.5rem);
+        top: clamp(4.5rem, 12vh, 7rem);
+        right: 1rem;
+    }
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .introContent {
+        width: min(100% - 64px, 1180px);
+        margin-inline: auto;
+        padding-inline: 32px;
+    }
+
+    .introContent h1 {
+        max-width: 78%;
+        font-size: clamp(82px, 10vw, 132px);
+        line-height: .84;
+    }
+
+    .introContent p {
+        width: min(512px, 48vw);
+    }
+
+    .introPic {
+        right: clamp(28px, 7vw, 96px);
+        left: auto;
+        top: 50%;
+        width: clamp(10rem, 17vw, 14rem);
+        height: clamp(10rem, 17vw, 14rem);
+        margin: 0;
+        transform: translateY(-12%);
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .introInfoContent {
+        width: min(100% - 96px, 1280px);
+        height: auto;
+        min-height: 390px;
+        margin-inline: auto;
+        padding-inline: 0;
+        display: grid;
+        grid-template-columns: minmax(280px, 446px) minmax(280px, 446px);
+        justify-content: space-between;
+        align-items: center;
+        column-gap: clamp(40px, 7vw, 120px);
+    }
+
+    .rightContent {
+        width: 100%;
+        height: auto;
+        min-width: 0;
+    }
+
+    .profilePic {
+        width: min(30rem, 34vw);
+        height: min(30rem, 34vw);
+        margin: 2rem auto 0;
+    }
+
+    .leftContent {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+        min-width: 0;
+        margin: 0;
+        padding-top: 0;
+    }
+
+    .leftContent h2 {
+        position: static;
+        margin: 0 0 2rem;
+        line-height: 1;
+    }
+
+    .leftContent p {
+        margin: 0;
+        line-height: 1.62;
+    }
+}
+
+
+@media (max-width: 1023.98px) {
+    .introInfoContent {
+        width: calc(100% - (var(--gutter) * 2));
+        height: auto;
+        min-height: 0;
+        margin-inline: auto;
+        padding-inline: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: clamp(34px, 8vw, 64px);
+    }
+
+    .rightContent,
+    .leftContent {
+        width: 100%;
+        height: auto;
+        min-width: 0;
+        margin: 0;
+    }
+
+    .rightContent h2 {
+        margin: 0;
+        line-height: 1;
+    }
+
+    .profilePic {
+        width: min(30rem, 82vw);
+        height: min(30rem, 82vw);
+        margin: 2rem auto 0;
+    }
+
+    .leftContent {
+        position: relative;
+        display: block;
+    }
+
+    .leftContent h2 {
+        position: static;
+        margin: 0 0 1.75rem;
+        line-height: 1;
+    }
+
+    .leftContent p {
+        margin: 0;
+        line-height: 1.62;
+    }
+}
+
+
+@media (max-width: 480px) {
+    #introInfo {
+        padding-block: 64px;
+    }
+
+    .introInfoContent {
+        gap: 28px;
+    }
+
+    .introContent {
+        width: calc(100% - 32px);
+        margin-inline: 16px;
+        padding-inline: 0;
+        justify-content: flex-start;
+        padding-top: calc(var(--header-h) + 48px);
+        padding-bottom: 48px;
+    }
+
+    .introContent h1 {
+        max-width: 100%;
+        order: 1;
+    }
+
+    .introPic {
+        position: relative;
+        right: auto;
+        top: auto;
+        align-self: center;
+        width: 9rem;
+        height: 9rem;
+        margin: 1.5rem 0 0;
+        transform: none;
+        order: 2;
+    }
+
+    .introContent p,
+    #explore {
+        order: 3;
+    }
+
+    .introContent p {
+        margin-top: 1.5rem;
+    }
+
+    .profilePic {
+        width: min(17rem, 72vw);
+        height: min(17rem, 72vw);
+        margin-top: 1.25rem;
+    }
+}
+
