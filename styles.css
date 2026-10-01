@@ -123,7 +123,7 @@ a {
     background-image:
         linear-gradient(rgba(7, 22, 23, 0.50),
             rgba(7, 22, 23, 0.99)),
-        url("./assets/images/Background2.jpg");
+        url("./assets/images/Background3.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -160,7 +160,8 @@ a {
 
 #introTitle,
 #introDesc,
-#explore {
+#explore,
+.introPic {
     opacity: 0;
     transform: translateY(40px);
 }
@@ -176,6 +177,12 @@ a {
 #explore.show {
     animation-delay: 0.4s;
 }
+
+.introPic.show {
+    animation-delay: 0.6s;
+
+}
+
 
 @keyframes fadeUp {
     from {
@@ -235,7 +242,6 @@ a {
     justify-content: center;
     align-items: center;
     gap: 6px;
-    ;
 }
 
 #explore svg {
@@ -261,6 +267,7 @@ a {
 }
 
 #introInfo {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -315,9 +322,29 @@ a {
     width: 446px;
     height: 390.5px;
 }
-.profilePic{
+
+.profilePic {
     margin-top: 2rem;
+    width: 50rem;
+    height: 50rem;
+    display: block;
+    object-fit: cover;
+    border-radius: 50%;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.introPic {
+    position: absolute;
+    margin-top: 2rem;
+    width: 15rem;
+    height: 15rem;
+    display: block;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    margin-left: 47rem;
+    margin-top: 10rem;
+
 }
 
 .rightContent h2 {

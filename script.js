@@ -111,7 +111,7 @@
     const revealGroups = [
         {
             selector: '#introduction',
-            targets: ['#introTitle', '#introDesc', '#explore'],
+            targets: ['#introTitle', '#introDesc', '#explore', '.introPic'],
             cls: 'show'
         },
         {
